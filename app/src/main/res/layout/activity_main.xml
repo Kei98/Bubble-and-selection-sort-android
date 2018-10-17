@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--El RelativeLayout se encarga de administrar las dimensiones de que se asignarán a la-->
+    <!--pantalla del dispositivo y las vistas secundarias que se encuentran dentro de la misma,-->
+    <!--así como el color de fondo entre otras.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="687dp"
+    android:layout_height="339dp"
+    android:background="#2E2E2E"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    android:paddingTop="16dp">
+
+    <!--El LinearLayout se encarga de alinear todos los elementos que se encuentren dentro del mismo-->
+    <!--ya sea de forma horizontal o vertical. Además se encarga de proporcionarle un tamano máximo-->
+    <!--(altura) y un margen de distancia entre cada elemento.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--El TextView es una interfaz que muestra un texto al usuario. A este se le puede asignar una-->
+        <!--altura, un ancho, color de fondo, una forma, color de texto, tamaño de texto y tipo de texto-->
+        <!--entre otras más. También se le pueden asignar funciones que pueda realizar cuando el usuario-->
+        <!--pulse sobre ellos, los cuales son controlados mediante un ID desde el MainActivity.-->
+        <TextView
+            android:id="@+id/txtnum1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="a"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="b"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="c"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="d"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtnum11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum14"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum19"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum20"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtnum21"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum22"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum23"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum25"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum26"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum27"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtnum28"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum29"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtnum31"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum32"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum33"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum34"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum35"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum36"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum37"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum38"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum39"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtnum40"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cyan_circle"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="#2E2E2E"
+            android:textSize="21sp" />
+    </LinearLayout>
+    <!--El siguiente TextView es el encargado de mostrar la cantidad de comparaciones-->
+    <TextView
+        android:id="@+id/txtnum41"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtnum42"
+        android:layout_marginEnd="140dp"
+        android:background="#F3F781"
+        android:text="Time: 0"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtnum42"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="129dp"
+        android:background="#F3F781"
+        android:text="Min for selection sort: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!--Los siguientes TextView son los botones-->
+    <TextView
+        android:id="@+id/bsort"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/txtnum41"
+        android:layout_alignParentStart="true"
+        android:background="#F5A9A9"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="BubbleSort"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/txtnum41"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="240dp"
+        android:background="#F5A9A9"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Close"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ssort"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/txtnum41"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:background="#F5A9A9"
+        android:text="Selectionsort"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
