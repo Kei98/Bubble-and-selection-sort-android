@@ -16,16 +16,16 @@ import java.sql.Time;
 public class MainActivity extends AppCompatActivity {
 
     /**
-     * Variables de la clase que serán utilizadas en la misma
+     * Variables utilizadas en la clase.
      *
      * largo: tamaño variable que tendrán los array que se utilizarán.
-     * cont: contador de pulsaciones del usuario sobre el ¨botón¨ BubbleSort.
+     * cont: cantidad de pulsaciones del usuario sobre el ¨botón¨ BubbleSort.
      * txtnum: Array que almacenará los valores númericos a los que se le aplicara el ordenamiento.
      * array: Array en el cual se guardarán los números que se crearán de forma aleatoria para luego
-     * ser traspasados al Array txtnum.
+     * ser almacenados en el Array txtnum.
      * handler: controlador que se encargará de la ejecución del proceso de ordenamiento.
-     * compare: variable que contará el número de comparaciones que ha realizado el método de
-     * ordenamiento en su objetivo de ordenar los datos.
+     * compare: variable que cuenta el número de comparaciones que se realizaron en el método de
+     * ordenamiento a la hora de ordenar los datos.
      */
 
     public int largo = (int) (Math.random() * 20);
@@ -106,17 +106,17 @@ public class MainActivity extends AppCompatActivity {
         txtnum[41] = (TextView)findViewById(R.id.txtnum42);
 
         /**
-         * Ciclo que se encarga de asignar un valor numérico de entre 0 y 100 de forma aleatoria a
-         * cada posición del array que tiene un tamaño variable y que depende de la constante largo
-         * que también se crea de forma aleatoria en un rango entre 20 y 40.
+         * Ciclo encargado de asignar un valo aleatorio de 1 al 100 a cada posicion 
+         * del array, el cual tiene un largo aleatorio entre 20 y 40 el cual se le asigna a
+         * la constante largo.
          */
         for(int i = 0; i < largo; i++) {
             array[i] = (int)(Math.floor(Math.random()*100 +1));
         }
 
         /**
-         * Ciclo que se encarga de asignar los valores numéricos que se encuentran en ¨array¨ a otro
-         * otro array llamado ¨txtnum¨ que mediante un ID se encarga de mostrarlos en pantalla.
+         * Ciclo encargado de asignar los valores del array a un nuevo array, txtnum
+         * el cual se encarga de mostrar estos valores en pantalla.
          */
         for(int i = 0; i < largo; i++){
             txtnum[i].setText(String.valueOf(array[i]));
@@ -133,9 +133,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         /**
-         * Método que se encarga de asignar una función al ¨botón¨ de BubbleSort que se encuentra
-         * en pantalla, donde dependiendo la cantidad  de veces (1) llama al método de ordemaniento
-         * (2) muestra una alerta al usuario para que especifíque que desea hacer.
+         * Método encargado de asignar una funcion al boton de Bubblesort en la pnatalla
+         * donde segun la cantidad de llamados reliza una acción, (1) llama el método de ordenamiento
+         * (2) muestra una alerta al usuario para que especifique que hacer.
          */
         ((TextView)findViewById(R.id.bsort)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,8 +165,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /**
-         * Método que se encarga de asigar una función al ¨botón¨ de Close que se encuentra en
-         * pantalla, donde al ser pulsado por el usuario cerrará la aplicación.
+         * Método para asignar al botón "close" en la pantalla
+         * para que cierre la aplicación.
          */
         ((TextView)findViewById(R.id.close)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -218,14 +218,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Método que se encarga de llamar al método animado del ordenamiento BubbleSort.
+     * Método llama al método animado del ordenamiento BubbleSort.
      */
     public void bubblesort(){
         time1 = System.nanoTime();
         animationBBS(0,1);
         cont++;
     }
-
+    /**
+     * Método llama al método animado del ordenamiento SelectionSort.
+     */
     public void selectionsort() throws InterruptedException {
         time1 = System.nanoTime();
         animationSLS(0,20);
@@ -235,8 +237,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Método que se encarga de las animaciones que el usuario verá en pantalla al realizarse el
-     * ordenamiento.
+     * Método que se encarga de realizar las animaciones que el usuario verá en pantalla al realizarse el
+     * ordenamiento por medio de BubbleSort.
      * @param a
      * @param b
      */
@@ -244,11 +246,10 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
 
             /**
-             * Método que se encarga de realizar las comparaciones de los valores que se encuentran
-             * en el array ¨txtnum¨ para realizar un cambio o mo de posiciones de los valores según
-             * sea el valor en la posición ¨a¨ mayor, menor o  igual al valor de la posición ¨b¨.
-             * Además cambia el color de fondo de los dos elementos que se encuentran en comparación
-             * para que el usuario pueda observar los valores que está comparando la aplicación.
+             * Método encargado de realizar las compraciones y los cambios es el array txtnum
+                 * dependiendo de si el elemento a es mayor, igual o menor al elemnto b, y de cambiar
+                 * el color del fondo de los elemntos que se estan comparando para que el usuario
+                 * pueda darles seguimiento, todo utilizando bubblesort.
              */
             @Override
             public void run() {
@@ -279,7 +280,12 @@ public class MainActivity extends AppCompatActivity {
         txtnum[40].setText("Time:"+ totalTime + "s");
     }
 
-
+    /**
+     * Método que se encarga de realizar las animaciones que el usuario verá en pantalla al realizarse el
+     * ordenamiento por medio de SelectionSort.
+     * @param a
+     * @param b
+     */
     private void animationSLS(final int a, final int b) {
         if(Integer.valueOf(txtnum[a].getText().toString()) != 0){
             delay = 700;
@@ -289,11 +295,10 @@ public class MainActivity extends AppCompatActivity {
 
 
                 /**
-                 * Método que se encarga de realizar las comparaciones de los valores que se encuentran
-                 * en el array ¨txtnum¨ para realizar un cambio o mo de posiciones de los valores según
-                 * sea el valor en la posición ¨a¨ mayor, menor o  igual al valor de la posición ¨b¨.
-                 * Además cambia el color de fondo de los dos elementos que se encuentran en comparación
-                 * para que el usuario pueda observar los valores que está comparando la aplicación.
+                 * Método encargado de realizar las compraciones y los cambios es el array txtnum
+                 * dependiendo de si el elemento a es mayor, igual o menor al elemnto b, y de cambiar
+                 * el color del fondo de los elemntos que se estan comparando para que el usuario
+                 * pueda darles seguimiento, todo utilizando selectionsort.
                  */
                 @Override
                 public void run() {
