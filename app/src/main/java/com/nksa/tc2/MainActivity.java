@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         /**
          * Ciclo encargado de asignar un valo aleatorio de 1 al 100 a cada posicion 
-         * del array, el cual tiene un largo aleatorio entre 20 y 40 que se le asignará a
+         * del array, el cual tiene un largo aleatorio entre 10 y 20 que se le asignará a
          * la constante largo.
          */
         for(int i = 0; i < largo; i++) {
