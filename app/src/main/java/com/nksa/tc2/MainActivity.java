@@ -12,7 +12,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.sql.Time;
-
+/**
+Para la ejecucion del programa es recomendable usar un Nexus X5 y android 7.0
+*/
 public class MainActivity extends AppCompatActivity {
 
     /**
@@ -134,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         /**
          * Método encargado de asignar una funcion al boton de Bubblesort en la pnatalla
-         * donde segun la cantidad de llamados reliza una acción, (1) llama el método de ordenamiento
+         * donde segun la cantidad de llamados reliza una acción, (1) llama el método de ordenamiento BubbleSort
          * (2) muestra una alerta al usuario para que especifique que hacer.
          */
         ((TextView)findViewById(R.id.bsort)).setOnClickListener(new View.OnClickListener() {
@@ -147,7 +149,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        /**
+         * Método encargado de asignar una funcion al boton de Bubblesort en la pnatalla
+         * donde segun la cantidad de llamados reliza una acción, (1) llama el método de ordenamiento SelectionSort
+         * (2) muestra una alerta al usuario para que especifique que hacer.
+         */
 
         ((TextView)findViewById(R.id.ssort)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -348,7 +354,9 @@ public class MainActivity extends AppCompatActivity {
             txtnum[a].setBackgroundResource(R.drawable.purple_circle);
         }
     }
-
+    /**
+    Metodo que analiza los elementos restantes y saca el primer elemento que encuentra
+    */
     private int remaining(){
         for(int i = 0; i < largo; i++){
             if(Integer.valueOf(txtnum[i].getText().toString()) != 0){
