@@ -251,12 +251,6 @@ public class MainActivity extends AppCompatActivity {
     public void animationBBS(final int a, final int b){
         handler.postDelayed(new Runnable() {
 
-            /**
-             * Método encargado de realizar las compraciones y los cambios es el array txtnum
-                 * dependiendo de si el elemento a es mayor, igual o menor al elemnto b, y de cambiar
-                 * el color del fondo de los elemntos que se estan comparando para que el usuario
-                 * pueda darles seguimiento, todo utilizando bubblesort.
-             */
             @Override
             public void run() {
                 if(Integer.valueOf(txtnum[a].getText().toString())>Integer.valueOf(txtnum[b].getText().toString())){
@@ -299,13 +293,6 @@ public class MainActivity extends AppCompatActivity {
 
             handler.postDelayed(new Runnable() {
 
-
-                /**
-                 * Método encargado de realizar las compraciones y los cambios es el array txtnum
-                 * dependiendo de si el elemento a es mayor, igual o menor al elemnto b, y de cambiar
-                 * el color del fondo de los elemntos que se estan comparando para que el usuario
-                 * pueda darles seguimiento, todo utilizando selectionsort.
-                 */
                 @Override
                 public void run() {
                     txtnum[41].setBackgroundColor(yellow);
